@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #15161B;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo > h2{
+    color: #fff;
+}
+
+h2 > span{
+    color: #1A7993;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.area-title1 > h1{
+    color: #fff;
+    font-size: 45px;
+    line-height: 50px;
+    font-variant: small-caps;
+}
+
+.area-title1 > h3{
+    color: #fff;
+    font-weight: normal;
+}
+
+.area-title1 > a{
+    background-color: #1A7993;
+    color: #fff;
+    display: inline-block;
+    border-radius: 2px;
+    margin: 50px 0px;
+    padding: 15px 40px;
+}
+
+.image1 > img{
+    width: 250px;
+    height: auto;
+}
+
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.section-cards > h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 40px 0px;
+}
+
+.card{
+    background-color: #2C2F37;
+    width: 200px;
+    height: 180px;
+    margin: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover{
+    background-color: #1A7993;
+    transition: 0.5s all;
+}
+
+.card > img{ 
+    width: 65px;
+}
+
+.section3{
+    background-color: #1A7993;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 100px 0px;
+}
+
+.area-title2 > h1{
+    color: #fff;
+    font-size: 35px;
+    font-variant: small-caps;
+}
+
+.area-title2 > h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.area-title2 > a{
+    background-color: #fff;
+    color: #1A7993;
+    font-weight: bold;
+    font-size: 19px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 50px 0px;
+    padding: 15px 40px;
+}
+
+.image2 > img{
+    width: 250px;
+    height: auto;
+}
+
+.area-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+.area-form > h2{
+    color: #fff;
+    text-align: center;
+}
+
+.formulario > form{
+    display: flex;
+    flex-direction: column;
+}
+
+form > input{
+    font-family: 'Oswald' sans-serif;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: #000;
+    text-transform: uppercase;
+}
+
+input[type="submit"]{
+    background-color: #1A7993;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape > .social{
+    margin: 10px 0px;
+}
+
+.social > h3{
+    color: #fff;
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+.social > a img{
+    width: 40px;
+    margin: 0px 4px;
+}
