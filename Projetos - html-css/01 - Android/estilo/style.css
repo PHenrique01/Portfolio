@@ -19,7 +19,6 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', 'cursive';
     --fonte-android: 'Android', 'cursive';
-    /* Variáveis no css */
 }
 
 *{
@@ -86,8 +85,8 @@ nav > a:hover{
 }
 
 main{
-    min-width: 300px;
-    max-width: 1000px;
+    min-width: 260px;
+    max-width: 800px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -181,7 +180,7 @@ aside > h3{
 }
 
 aside > ul{
-    list-style-type: '\2714\00A0\00A0'; /*Não é compativel com todo tipo de navegador*/
+    list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
     columns: 2;
 }
@@ -203,4 +202,28 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     color: var(--cor1);
+}
+
+@media (max-width:427px){
+    nav{
+        padding-left: 10px;
+    }
+
+    nav a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:388px){
+    header{
+        max-width: 100%;
+    }
+
+    nav{
+        padding-left: 15px;
+    }
+
+    nav a{
+        font-size: 10.3px;
+    }
 }

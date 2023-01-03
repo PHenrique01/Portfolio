@@ -6,23 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um site de exemplo do modulo de CSS">
     <meta name="keywords" content="Agencia Digital, CSS, HTML">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivo.css">
-    <title>Agência Fake Aula</title>
+    <title>Agência Fake</title>
 </head> 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <h1>Agência Fake</h1>
-        </div>
-        <nav class="menu">
-            <a href="#">Home</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Serviços</a>
-            <a id="botao" href="#">Fale conosco</a>
+    <!-- Header Start -->
+    <header class="cabecalho">
+        <h1 class="logo">Agência Fake</h1>
+        <nav class="cabecalho-menu">
+            <div id="btn-mobile">
+                <span id="hamburger">
+                </span>
+            </div> 
+            <ul class="menu-item">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#" id="btn">Fale Conosco</a></li>
+            </ul>
         </nav>
-    </header>
+    </header> 
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
     <main class="conteudo">
+        <!-- Conteudo-Principal Start -->
         <section class="conteudo-principal">
             <div class="conteudo-paragrafo">
                 <h2 class="paragrafo1">você achou a melhor</h2>
@@ -33,14 +42,17 @@
                 <a href="#" class="contact-btn">Contrate Agora</a> 
             </div>
             <div class="conteudo-img">
-                <img src="img/hero_right.png" alt="Imagem">
+                <img src="imgs/hero_right.png" alt="Imagem">
             </div>
         </section>
+        <!-- Conteudo-Principal End -->
+
+        <!-- Conteudo-Secundario Start -->
         <section class="conteudo-secundario">
             <h2>O que podemos fazer pelo seu negócios?</h2>
             <div class="servicos">
                 <div class="card">
-                    <img src="img/pc.png" alt="Icone">
+                    <img src="imgs/pc.png" alt="Icone">
                     <div class="card-text">
                         <h3>Desenvolvimento de Sites</h3>
                         <p>
@@ -55,7 +67,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/smartphone.png" alt="Icone">
+                    <img src="imgs/smartphone.png" alt="Icone">
                     <div class="card-text">
                         <h3>Desenvolvimento de Apps</h3>
                         <p>
@@ -70,7 +82,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/marketing.png" alt="Icone">
+                    <img src="imgs/marketing.png" alt="Icone">
                     <div class="card-text">
                         <h3>Marketing Digital</h3>
                         <p>
@@ -86,7 +98,11 @@
                 </div> 
             </div>
         </section>
+        <!-- Conteudo-Secundario End -->
     </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Content Start -->
     <footer class="rodape">
         <div class="logo-rodape">
             <h1>Agência Fake</h1>
@@ -94,6 +110,28 @@
         </div>
         <p>&copy;Todos os direitos reservados.</p>
     </footer>
-    <a class="whats" href="#" target="_blank"><img src="img/whats.png" alt="Imagem"></a>
+    <!-- Footer Content End -->
+    <a class="whats" href="#"><img src="imgs/whats.png" alt="Imagem"></a>
+
+    <!-- JS -->
+    <script>
+        const btnMobile = document.getElementById('btn-mobile')
+        
+        function toggleMenu(event){
+            if (event.type === 'touchstart') event.preventDefault();
+            const nav = document.querySelector('.cabecalho-menu');
+            nav.classList.toggle('active');
+            const active = nav.classList.contains('active');
+            event.currentTarget.setAttribute('aria-expanded', active);
+            if (active) {
+                event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+            } else {
+                event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+            }
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
+    </script>
 </body>
 </html>

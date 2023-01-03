@@ -477,7 +477,7 @@ body{
     font-weight: 500;
 }
 
-.projeto-imagem > img{
+.projeto-imagem a img{
     width: 100%;
     display: block;
 }
@@ -525,19 +525,19 @@ body{
 }
 
 .shadow-cor1:hover{
-    box-shadow: 0 0 20px rgba(255, 166, 0, 0.438);
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.80);
 }
 
 .shadow-cor2:hover{
-    box-shadow: 0 0 20px rgba(0, 0, 255, 0.438);
+    box-shadow: 0 0 20px rgba(0, 153, 255, 0.80);
 }
 
 .shadow-cor3:hover{
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.438);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.80);
 }
 
-.shadow-cor4:hover{
-    box-shadow: 0 0 20px rgba(32, 178, 171, 0.438);
+.shadow-cor4:hover{ 
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.80);
 }
 
 /* Rodape */
