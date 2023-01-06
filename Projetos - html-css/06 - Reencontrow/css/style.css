@@ -219,10 +219,6 @@ input[type="submit"]{
     margin: 0px 4px;
 }
 
-.fechar{
-    display: none !important;
-}
-
 @media (max-width:990px){
     .section1{
         display: flex;
@@ -247,10 +243,6 @@ input[type="submit"]{
 
     .section1 .image1 img{
         width: 500px;
-    }
-
-    .area-form{
-        border: 1px solid white;
     }
 }
 
