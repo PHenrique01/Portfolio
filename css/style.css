@@ -19,8 +19,8 @@
     --cor4: #0D0D0D;
     --cor5: #121212;
 
-    --gradient1: linear-gradient(to right, #9358F7, #10D7E2) 1;
-    --gradient2: linear-gradient(to right, #D24074, #6518B4) 1;
+    /* --gradient1: linear-gradient(to right, #9358F7, #10D7E2) 1;
+    --gradient2: linear-gradient(to right, #D24074, #6518B4) 1; */
 
     font-family: 'Inter', sans-serif;
 }
@@ -176,10 +176,34 @@ body{
     top: 50px;
 }
 
+.logo > h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.logo h1 a{
+    color: var(--cor3);
+    transition-duration: 0.5s;
+}
+
+.logo h1 a:hover{
+    color: var(--cor1);
+}
+
+/* Logo img start */
+
+/* #header > .logo{
+    position: absolute;
+    top: 50px;
+}
+
 .logo > img{
     width: 200px;
     position: relative;
-}
+} */ 
+
+/* Logo img end */
+
 
 /* Menu mobile start */
 
@@ -301,8 +325,9 @@ body{
 
 .home-info > .btn{
     color: var(--cor1);
-    border: 2px solid white;
-    border-image: var(--gradient1);
+    border: 2px solid var(--cor3);
+    border-radius: 5px;
+    /* border-image: var(--gradient1); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,8 +394,9 @@ body{
 
 .buttons > #btn1{
     color: var(--cor1);
-    border: 2px solid;
-    border-image: var(--gradient1);
+    border: 2px solid var(--cor3);
+    border-radius: 4px;
+    /* border-image: var(--gradient1); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,8 +414,9 @@ body{
 
 .buttons > #btn2{
     color: var(--cor1);
-    border: 2px solid;
-    border-image: var(--gradient2);
+    border: 2px solid var(--cor3);
+    border-radius: 4px;
+    /* border-image: var(--gradient2); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -563,6 +590,11 @@ body{
     align-items: center;
     gap: 4px;
     margin: 0px auto;
+    text-transform: uppercase;
+}
+
+.rodape-info p span{
+    color: var(--cor3);
 }
 
 /* ------------------ */
