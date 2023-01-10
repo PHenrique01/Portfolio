@@ -769,5 +769,11 @@ body{
     .skills .skills-item .skills-item-inner{
         height: auto;
     }
+}
 
+@media (max-width:433px){
+    .rodape-info p{
+        display: flex;
+        flex-direction: column;
+    }
 }
