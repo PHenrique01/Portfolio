@@ -44,6 +44,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: width 0.3s;
 }
 
 .card-login{
