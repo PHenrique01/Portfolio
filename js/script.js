@@ -26,3 +26,10 @@ function headerSectionTogglerBtn(){
     header.classList.toggle("open")
     navTogglerBtn.classList.toggle("open")
 }
+
+
+// ------
+
+function redsocial(){
+    window.alert("[ERRO}! No momento esse botão não está funcionadno")
+}

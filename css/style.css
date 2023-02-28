@@ -560,10 +560,14 @@ body{
 }
 
 .shadow-cor3:hover{
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.80);
+}
+
+.shadow-cor4:hover{
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.80);
 }
 
-.shadow-cor4:hover{ 
+.shadow-cor5:hover{ 
     box-shadow: 0 0 20px rgba(0, 128, 0, 0.80);
 }
 
