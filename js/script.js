@@ -30,6 +30,6 @@ function headerSectionTogglerBtn(){
 
 // ------
 
-function redsocial(){
-    window.alert("[ERRO]! No momento esse botão não está funcionando")
-}
+// function redsocial(){
+//     window.alert("[ERRO]! No momento esse botão não está funcionando")
+// }
